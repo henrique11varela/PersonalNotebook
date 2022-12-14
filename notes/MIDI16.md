@@ -6,17 +6,22 @@ A MidiFighter inspired midi controller made with arduino.
 ---
 
 ## Image Showcase
+
+
+### TopView
+![AllView](../images/MIDI16/all.png)
+---
 ### TopView
 ![TopView](../images/MIDI16/TopView.jpg)
 ---
 ### FrontView
-![TopView](../images/MIDI16/FrontView.jpg)
+![FrontView](../images/MIDI16/FrontView.jpg)
 ---
 ### InsideView
-![TopView](../images/MIDI16/InsideView.jpg)
+![InsideView](../images/MIDI16/InsideView.jpg)
 ---
 ### InsideCloseUp
-![TopView](../images/MIDI16/InsideCloseUp.jpg)
+![InsideCloseUp](../images/MIDI16/InsideCloseUp.jpg)
 
 ---
 ## Pin Table
