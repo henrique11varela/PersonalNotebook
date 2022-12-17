@@ -8,7 +8,7 @@ A MidiFighter inspired midi controller made with arduino.
 ## Image Showcase
 
 
-### TopView
+### AllView
 ![AllView](../images/MIDI16/all.png)
 ---
 ### TopView
