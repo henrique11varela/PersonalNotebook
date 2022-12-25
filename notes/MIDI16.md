@@ -1,29 +1,46 @@
 [Back](../README.md)
+
 # MIDI16
 
 A MidiFighter inspired midi controller made with arduino.
 
 ---
 
+## TO DO
+
+- [ ] Prepare multiplexer
+- [ ] Learn screen
+- [ ] Plan menus UML
+- [ ] Plan playing modes
+  
 ## Image Showcase
 
-
 ### AllView
+
 ![AllView](../images/MIDI16/all.png)
 ---
+
 ### TopView
+
 ![TopView](../images/MIDI16/TopView.jpg)
 ---
+
 ### FrontView
+
 ![FrontView](../images/MIDI16/FrontView.jpg)
 ---
+
 ### InsideView
+
 ![InsideView](../images/MIDI16/InsideView.jpg)
 ---
+
 ### InsideCloseUp
+
 ![InsideCloseUp](../images/MIDI16/InsideCloseUp.jpg)
 
 ---
+
 ## Pin Table
 
 | Arduino | Multiplexer | Jack  | Switch | Screen | Encoder |
@@ -44,5 +61,6 @@ A MidiFighter inspired midi controller made with arduino.
 | A1      |             |       |        |        |         |
 | A2      |             |       |        |        |         |
 | A3      |             |       |        |        |         |
+
 
 
