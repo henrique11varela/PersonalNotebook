@@ -64,3 +64,7 @@ A MidiFighter inspired midi controller made with arduino.
 
 ## Button Mapping
 ![Button Mapping](/images/MIDI16/Button_Mapping.png)
+
+## Menu Diagram
+
+![Menu Diagram](/images/MIDI16/Menu_Diagram.png)
