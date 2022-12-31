@@ -23,4 +23,5 @@ A list to store info about the part.
 ![](/images/ComponentsList/MPR121.png)
 
 - SSD1306  
+[Local Documentation](/notes/SSD1306.md)  
 ![](/images/ComponentsList/SSD1306.png)
