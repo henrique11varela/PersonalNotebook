@@ -4,6 +4,7 @@
 List of tutorials
 
 ## List
+- [ ] [C++ image processing](https://www.youtube.com/watch?v=HGHbcRscFsg)  
 - [ ] [Handmade Hero Complete](https://www.youtube.com/playlist?list=PLnuhp3Xd9PYTt6svyQPyRO_AAuMWGxPzU)  
   - Game in C
 - [ ] [Algorithms and Data Structures](https://www.youtube.com/watch?v=8hly31xKli0&list=WL&index=82&t=10558s)
