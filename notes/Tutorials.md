@@ -4,6 +4,7 @@
 List of tutorials
 
 ## List
+- [ ] [C++ image class - dado pelo ruben](https://www.inf.pucrs.br/~pinho/CG-PPGCC/PraticaOpenGLImagens/ImageClass.html)
 - [ ] [C++ image processing](https://www.youtube.com/watch?v=HGHbcRscFsg)  
 - [ ] [Handmade Hero Complete](https://www.youtube.com/playlist?list=PLnuhp3Xd9PYTt6svyQPyRO_AAuMWGxPzU)  
   - Game in C
