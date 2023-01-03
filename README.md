@@ -1,7 +1,7 @@
 # PersonalNotebook
 Where i store my notes.
 
-- [Idea List](notes/IdeaList.md)
-- [Tutorials](notes/Tutorials.md)
-- [MIDI16](notes/MIDI16.md)
-- [Components List](notes/ComponentsList.md)
+- [Idea List](/IdeaList/IdeaList.md)
+- [Tutorials](/Tutorials/Tutorials.md)
+- [MIDI16](/MIDI16/MIDI16.md)
+- [Components List](/ComponentsList/ComponentsList.md)
