@@ -1,4 +1,4 @@
-# pr-notes
+# PersonalNotebook
 Where i store my notes.
 
 - [Idea List](notes/IdeaList.md)
