@@ -8,8 +8,8 @@ A MidiFighter inspired midi controller made with arduino.
 
 ## TO DO
 
-- [ ] Prepare multiplexer
-- [ ] Learn screen
+- [x] Prepare multiplexer
+- [x] Learn screen
 - [ ] Plan menus UML
 - [ ] Plan playing modes
   
@@ -17,27 +17,27 @@ A MidiFighter inspired midi controller made with arduino.
 
 ### AllView
 
-![AllView](../images/MIDI16/all.png)
+![AllView](/MIDI16/all.png)
 ---
 
 ### TopView
 
-![TopView](../images/MIDI16/TopView.jpg)
+![TopView](/MIDI16/TopView.jpg)
 ---
 
 ### FrontView
 
-![FrontView](../images/MIDI16/FrontView.jpg)
+![FrontView](/MIDI16/FrontView.jpg)
 ---
 
 ### InsideView
 
-![InsideView](../images/MIDI16/InsideView.jpg)
+![InsideView](/MIDI16/InsideView.jpg)
 ---
 
 ### InsideCloseUp
 
-![InsideCloseUp](../images/MIDI16/InsideCloseUp.jpg)
+![InsideCloseUp](/MIDI16/InsideCloseUp.jpg)
 
 ---
 
@@ -63,8 +63,8 @@ A MidiFighter inspired midi controller made with arduino.
 | A3      |             |       |        |        |         |
 
 ## Button Mapping
-![Button Mapping](/images/MIDI16/Button_Mapping.png)
+![Button Mapping](/MIDI16/Button_Mapping.png)
 
 ## Menu Diagram
 
-![Menu Diagram](/images/MIDI16/Menu_Diagram.png)
+![Menu Diagram](/MIDI16/Menu_Diagram.png)
