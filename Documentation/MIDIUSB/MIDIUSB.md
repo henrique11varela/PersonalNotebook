@@ -31,7 +31,7 @@ MidiUSB.read();
 > 
 Sending MIDI signal
 ```arduino
-    MidiUSB.sendMIDI(midiEventPacket_t note);
+MidiUSB.sendMIDI(midiEventPacket_t note);
 ```
 > This sends the MIDI signal with the *note* data
 
