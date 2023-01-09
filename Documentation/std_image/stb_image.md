@@ -19,7 +19,7 @@ struct Image {
     Image(const char* filename); //Constructor
     ~Image(); //Deconstructor
 
-    bool read(const char* filename); //Part of the Cunstructor
+    bool read(const char* filename); //Part of the Constructor
 };
 ```
 > - *w* and *h* are the width and height of the image in pixels

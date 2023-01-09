@@ -8,7 +8,7 @@ This is a library to send and recieve MIDI information through usb.
 
 Each midiEventPacket is a struct with 4 parameters that must be instantiated:
 
-```arduino
+```cpp
     midiEventPacket_t instanceName = {note on/off, note on/off | channel, pitch, velocity};
 ```
 > - First parameter is the event type   
@@ -24,19 +24,19 @@ Each midiEventPacket is a struct with 4 parameters that must be instantiated:
 > control change (0-127).
 
 Reading MIDI signal
-```arduino
+```cpp
 MidiUSB.read();
 ```
 > This reads a MIDI signal and returns a *midiEventPacket_t*.
 > 
 Sending MIDI signal
-```arduino
+```cpp
 MidiUSB.sendMIDI(midiEventPacket_t note);
 ```
 > This sends the MIDI signal with the *note* data
 
 Forcing signal transmition
-```arduino
+```cpp
 MidiUSB.flush();
 ```
 > This flushes all the unsent messages by sending them.
@@ -45,7 +45,7 @@ MidiUSB.flush();
 
 This is an example of *noteOn*, *noteOff* and *controlChange* functions, instantiating and sending the midi information.
 
-```arduino
+```cpp
 void noteOn(byte channel, byte pitch, byte velocity) {
   midiEventPacket_t noteOn = {0x09, 0x90 | channel, pitch, velocity};
   MidiUSB.sendMIDI(noteOn);
