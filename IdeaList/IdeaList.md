@@ -3,6 +3,7 @@
 Idea brewing
 
 ## List
+- [ ] [js snake game OOP](#snake-js-oop)
 - [ ] [EWI](#ewi)
 - [ ] [Music practive helper](#music-practice-helper)
 
@@ -11,6 +12,12 @@ Idea brewing
 
 ---
 # Indepth
+
+### Snake js oop
+
+snake object with segment object that has coordinates
+
+---
 ### EWI
 A wind midi controller based on saxophone.
 
