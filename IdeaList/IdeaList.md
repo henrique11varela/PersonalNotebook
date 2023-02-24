@@ -4,6 +4,7 @@ Idea brewing
 
 ## List
 - [ ] [js snake game OOP](#snake-js-oop)
+- [ ] [Conway's Game of Life](#conways-game-of-life)
 - [ ] [EWI](#ewi)
 - [ ] [Music practive helper](#music-practice-helper)
 
@@ -16,6 +17,12 @@ Idea brewing
 ### Snake js oop
 
 snake object with segment object that has coordinates
+
+---
+### Conway's Game of Life
+
+- [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)  
+- https://playgameoflife.com/
 
 ---
 ### EWI
