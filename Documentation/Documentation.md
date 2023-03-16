@@ -2,12 +2,12 @@
 # Documentation
 
 ### Web Dev
-- [Bootstrap](/Documentation/Bootstrap/Bootstrap.md) 
+- [Bootstrap](Bootstrap/Bootstrap.md) 
 
 ### C++
-- [stb_image](/Documentation/std_image/stb_image.md)
+- [stb_image](std_image/stb_image.md)
 
 
 ### Arduino
-- [SSD1306](/Documentation/SSD1306/SSD1306.md)
-- [MIDIUSB](/Documentation/MIDIUSB/MIDIUSB.md)
+- [SSD1306](SSD1306/SSD1306.md)
+- [MIDIUSB](MIDIUSB/MIDIUSB.md)
