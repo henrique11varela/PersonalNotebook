@@ -10,6 +10,7 @@ List of tutorials
 - [Packet Tracer - CCNA Routing & Switching](https://www.youtube.com/playlist?list=PLxbwE86jKRgMQ4HTuaJ7yQgA2BoNwY9ct)
 - [Database - Normalization](https://www.youtube.com/watch?v=GFQaEYEc8_8)
 - [XML - Beginner Tutorial](https://www.youtube.com/playlist?list=PLhW3qG5bs-L9DloLUPwC3GdFimY5Ce_gS)
+- [Node.js Crash Course](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
 
 ## List
 
@@ -18,7 +19,12 @@ List of tutorials
 - [ ] [Handmade Hero Complete](https://www.youtube.com/playlist?list=PLnuhp3Xd9PYTt6svyQPyRO_AAuMWGxPzU)  
   - Game in C
 - [ ] [Algorithms and Data Structures](https://www.youtube.com/watch?v=8hly31xKli0&list=WL&index=82&t=10558s)
+- [ ] [Graph Algorithms for Technical Interviews](https://www.youtube.com/watch?v=tWVWeAqZ0WU&list=WL&index=2&t=1s)
 - [ ] [SQL](https://www.youtube.com/watch?v=xiUTqnI6xk8&list=WL&index=8)
 - [ ] [Godot](https://www.youtube.com/playlist?list=PLhqJJNjsQ7KEcm-iYJ2a8UCRN62bTneKa)
 - [ ] [Html Canvas](https://www.youtube.com/watch?v=vAJEHf92tV0&list=WL&index=17)
+- [ ] [Getting Started with ESP32 - Step-By-Step Tutorial](https://www.youtube.com/watch?v=tc3Qnf79Ny8&list=PL5tsI-MFTq5_1DQSiZUytLH11K-xPvTi5&index=5)
+- [ ] [ESP8266 Internet Web Server](https://youtu.be/80TUUJGCmpo)
+- [ ] [Build an ESP8266 Web Server with Arduino IDE - Code and Schematics](https://www.youtube.com/watch?v=dWM4p_KaTHY&list=WL&index=2&t=140s)
+
 

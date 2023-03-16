@@ -17,5 +17,12 @@ Example:
       - File_4.md
 
 ## MD Rules
-- *Back* button in the header  
-- *Links* for every resource
+- ***Back*** button in the header  
+- ***Links*** for every resource
+
+## Images  
+For the images I use:
+- ***Excalidraw***  
+  > for sketches
+- ***Drawio***  
+  > for diagrams
