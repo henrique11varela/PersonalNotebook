@@ -37,9 +37,9 @@ $\cot \theta$ = $\frac{1}{\tan \theta}$ = $\frac{\frac{A}{H}}{\frac{O}{H}}$ = $\
 
 | Function | Period | Domain              | Range   | Graph              |
 | -------- | ------ | ------------------- | ------- | ------------------ |
-| $\sin$   | $2\pi$ | $]-\infin, \infty[$ | [-1, 1] | ![](sin_graph.png) |
-| $\cos$   | $2\pi$ | $]-\infin, \infty[$ | [-1, 1] | ![](cos_graph.png) |
-| $\tan$   | $\pi$ | $x \not ={\frac{\pi}{2} + n\pi}$ | $]-\infin, \infty[$ | ![](tan_graph.png) |
-| $\sec$   | $2\pi$ | $x \not ={\frac{\pi}{2} + n\pi}$ | $]-\infin, -1] U [1, \infty[$ | ![](sec_graph.png) |
-| $\csc$   | $2\pi$ | $x \not ={n\pi}$ | $]-\infin, -1] U [1, \infty[$ | ![](csc_graph.png) |
-| $\cot$   | $\pi$ | $x \not ={n\pi}$ | $]-\infin, \infty[$ | ![](cot_graph.png) |
+| $\sin$   | $2\pi$ | $]-\infin , \infty[$ | [-1, 1] | ![](sin_graph.png) |
+| $\cos$   | $2\pi$ | $]-\infin , \infty[$ | [-1, 1] | ![](cos_graph.png) |
+| $\tan$   | $\pi$ | $x \not ={\frac{\pi}{2} + n\pi}$ | $]-\infin , \infty[$ | ![](tan_graph.png) |
+| $\sec$   | $2\pi$ | $x \not ={\frac{\pi}{2} + n\pi}$ | $]-\infin , -1] U [1, \infty[$ | ![](sec_graph.png) |
+| $\csc$   | $2\pi$ | $x \not ={n\pi}$ | $]-\infin , -1] U [1, \infty[$ | ![](csc_graph.png) |
+| $\cot$   | $\pi$ | $x \not ={n\pi}$ | $]-\infin , \infty[$ | ![](cot_graph.png) |
