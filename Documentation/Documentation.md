@@ -5,6 +5,7 @@
 - [SQL Server](SQL_Server/SQL_Server.md) 
 
 ### Web Dev
+- [Laravel](Laravel/Laravel.md)
 - [Bootstrap](Bootstrap/Bootstrap.md) 
 
 ### C++
