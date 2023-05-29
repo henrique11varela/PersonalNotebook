@@ -36,3 +36,4 @@ List of tutorials
 - https://thoseawesomeguys.com/prompts/
 - states in game of life (lookup tables) https://www.youtube.com/watch?v=Hz_13P7lRoA
 - Conditional function declaration in a class
+- Make files

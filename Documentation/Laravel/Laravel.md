@@ -7,8 +7,8 @@
   - [Create Laravel Project](#create-laravel-project)
   - [Setup Laravel Project](#setup-laravel-project)
   - [Run Laravel Server](#run-laravel-server)
-  - [Create Model/Controller/Factory/Seeder](#create-modelcontrollerfactoryseeder)
   - [Database](#database)
+  - [Create Model/Controller/Factory/Seeder](#create-modelcontrollerfactoryseeder)
   - [Routes](#routes)
   - [Views](#views)
   - [Controllers](#controllers)
@@ -36,7 +36,7 @@
 - Add Frontend Resources: [documentation](https://packagist.org/packages/laravel/ui)
     ```shell
     composer require laravel/ui:^2.4
-    php artisan ui bootstrap
+    php artisan ui vue --auth
     ```
 
 - Install composer/npm dependencies
@@ -57,6 +57,34 @@
     ```shell
     php artisan serve
     ```
+    
+---
+
+## Database
+
+- Create Database
+    > Create a database in phpMyAdmin (XAMPP)
+
+- .env
+    > Change DB_DATABASE to the name of the database
+
+- Migrate Database
+    ```shell
+    php artisan migrate
+    ```
+    > Create tables using migrations
+
+- Seed Database
+    ```shell
+    php artisan db:seed
+    ```
+    > Fill tables with data using seeders
+
+- Migrate and Seed Database
+    ```shell
+    php artisan migrate:fresh --seed
+    ```
+    > Create tables using migrations and fill tables with data using seeders fresh from zero
 
 ---
 
@@ -96,33 +124,6 @@
     > %name% is the name of the seeder (singular)  
 
 
----
-
-## Database
-
-- Create Database
-    > Create a database in phpMyAdmin (XAMPP)
-
-- .env
-    > Change DB_DATABASE to the name of the database
-
-- Migrate Database
-    ```shell
-    php artisan migrate
-    ```
-    > Create tables using migrations
-
-- Seed Database
-    ```shell
-    php artisan db:seed
-    ```
-    > Fill tables with data using seeders
-
-- Migrate and Seed Database
-    ```shell
-    php artisan migrate:fresh --seed
-    ```
-    > Create tables using migrations and fill tables with data using seeders fresh from zero
 
 ---
 
