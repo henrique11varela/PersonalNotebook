@@ -1,5 +1,6 @@
-[Back](../Knowledge.md)
 # SQL Select Problem Solving
+
+[Back](../Knowledge.md)
 
 1. FROM
    - Detect tables that are needed to solve the problem

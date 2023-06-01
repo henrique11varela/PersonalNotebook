@@ -1,11 +1,14 @@
-[Back](../Documentation.md)
 # stb_image
+
+[Back](../Documentation.md)
 
 [Github Repo for this lib](https://github.com/nothings/stb)  
 [Youtube playlist tutorial](https://www.youtube.com/playlist?list=PLG5M8QIx5lkzdGkdYQeeCK__As6sI2tOY)
 
 ## Preparation
+
 Start with a struct to hold every information in the image
+
 ```cpp
 //Image.h
 #include <stdint.h>
@@ -22,6 +25,7 @@ struct Image {
     bool read(const char* filename); //Part of the Constructor
 };
 ```
+
 > - *w* and *h* are the width and height of the image in pixels
 > - *channels* one for each color channel (normally 3)
 > - *size = w \* h \* channels*
@@ -52,6 +56,7 @@ bool Image::read(const char *filename){ // ! Reads image
     return data != NULL;
 };
 ```
+
 > - In *stbi_load* the *0* is the *force channels* parameter, 0 if there is no forcing (don't force by default)
 
 ```cpp
@@ -62,6 +67,7 @@ Image::~Image(){ // ! Destructor
 ```
 
 ## Usage
+
 Just instanciate the struct with the file path
 
 ```cpp
@@ -69,9 +75,9 @@ Image img(imgName); //instance
 ```
 
 and use the *data* as an array, each pixel has 3 positions
+
 ```cpp
 r[pixel] = data[pixel * 3];
 g[pixel] = data[pixel * 3 + 1];
 b[pixel] = data[pixel * 3 + 2];
 ```
-

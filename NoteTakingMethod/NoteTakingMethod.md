@@ -1,8 +1,9 @@
-[Back](../README.md)
 # Note Taking Method
 
+[Back](../README.md)
 
 ## File System
+
 Every MD file has its own folder that contains everything related to that MD  
 Example:  
 
@@ -17,12 +18,18 @@ Example:
       - File_4.md
 
 ## MD Rules
+
 - ***Back*** button in the header  
 - ***Links*** for every resource
 
 ## Images  
+
 For the images I use:
+
 - ***Excalidraw***  
-  > for sketches
+
+> for sketches
+
 - ***Drawio***  
-  > for diagrams
+
+> for diagrams

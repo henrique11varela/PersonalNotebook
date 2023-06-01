@@ -1,7 +1,8 @@
-[Back](../Knowledge.md)
 # Trigonometry
 
-![](rectTriangle.excalidraw.png)
+[Back](../Knowledge.md)
+
+![rectTriangle](rectTriangle.excalidraw.png)
 
 $\sin \theta$ = $\frac{O}{H}$  
 
@@ -23,7 +24,7 @@ $\cot \theta$ = $\frac{1}{\tan \theta}$ = $\frac{\frac{A}{H}}{\frac{O}{H}}$ = $\
 
 ## The unit circle
 
-![](unitCircle.excalidraw.png)
+![unitCircle](unitCircle.excalidraw.png)
 
 | Function | 0         | $\frac{\pi}{6}$       | $\frac{\pi}{4}$      | $\frac{\pi}{3}$       | $\frac{\pi}{2}$ | $\frac{2\pi}{3}$      | $\frac{3\pi}{4}$      | $\frac{5\pi}{6}$      | $\pi$     |
 | -------- | --------- | --------------------- | -------------------- | --------------------- | --------------- | --------------------- | --------------------- | --------------------- | --------- |
@@ -34,12 +35,11 @@ $\cot \theta$ = $\frac{1}{\tan \theta}$ = $\frac{\frac{A}{H}}{\frac{O}{H}}$ = $\
 | $\csc$   | undefined | 2                     | $\sqrt{2}$           | $\frac{2\sqrt{3}}{3}$ | 1               | $\frac{2\sqrt{3}}{3}$ | $\sqrt{2}$            | 2                     | undefined |
 | $\cot$   | undefined | $\sqrt{3}$            | 1                    | $\frac{\sqrt{3}}{3}$  | 0               | $-\frac{\sqrt{3}}{3}$ | -1                    | $-\sqrt{3}$           | undefined |
 
-
 | Function | Period | Domain              | Range   | Graph              |
 | -------- | ------ | ------------------- | ------- | ------------------ |
-| $\sin$   | $2\pi$ | $]-\infty, \infty[$ | [-1, 1] | ![](sin_graph.png) |
-| $\cos$   | $2\pi$ | $]-\infty, \infty[$ | [-1, 1] | ![](cos_graph.png) |
-| $\tan$   | $\pi$ | $x \not ={\frac{\pi}{2} + n\pi}$ | $]-\infty, \infty[$ | ![](tan_graph.png) |
-| $\sec$   | $2\pi$ | $x \not ={\frac{\pi}{2} + n\pi}$ | $]-\infty, -1] U [1, \infty[$ | ![](sec_graph.png) |
-| $\csc$   | $2\pi$ | $x \not ={n\pi}$ | $]-\infty, -1] U [1, \infty[$ | ![](csc_graph.png) |
-| $\cot$   | $\pi$ | $x \not ={n\pi}$ | $]-\infty, \infty[$ | ![](cot_graph.png) |
+| $\sin$   | $2\pi$ | $]-\infty, \infty[$ | [-1, 1] | ![sin_graph](sin_graph.png) |
+| $\cos$   | $2\pi$ | $]-\infty, \infty[$ | [-1, 1] | ![cos_graph](cos_graph.png) |
+| $\tan$   | $\pi$ | $x \not ={\frac{\pi}{2} + n\pi}$ | $]-\infty, \infty[$ | ![tan_graph](tan_graph.png) |
+| $\sec$   | $2\pi$ | $x \not ={\frac{\pi}{2} + n\pi}$ | $]-\infty, -1] U [1, \infty[$ | ![sec_graph](sec_graph.png) |
+| $\csc$   | $2\pi$ | $x \not ={n\pi}$ | $]-\infty, -1] U [1, \infty[$ | ![csc_graph](csc_graph.png) |
+| $\cot$   | $\pi$ | $x \not ={n\pi}$ | $]-\infty, \infty[$ | ![cot_graph](cot_graph.png) |
