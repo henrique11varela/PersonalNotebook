@@ -27,8 +27,8 @@
     - [Controller](#controller)
     - [Model](#model)
     - [Migration](#migration)
-    - [Factory](#factory)
     - [Seeder](#seeder)
+    - [Factory](#factory)
   - [Routes](#routes)
     - [Create Route](#create-route)
   - [Views](#views)
@@ -62,6 +62,9 @@ composer create-project --prefer-dist laravel/laravel:^7.0 %nome_do_projeto%
 
 ```shell
 composer require laravel/ui:^2.4
+```
+
+```shell
 php artisan ui vue --auth
 ```
 
@@ -156,6 +159,8 @@ php artisan make:model %name%
 
 ### Migration
 
+[Example](./Examples/Migrations.md)
+
 ```shell
 php artisan make:migration %creator% --create=%table%
 ```
@@ -163,15 +168,9 @@ php artisan make:migration %creator% --create=%table%
 > %creator% is the name of the migration (plural) *create_table_plural*  
 > %table% is the name of the table (plural)
 
-### Factory
-
-```shell
-php artisan make:factory %name%
-```
-
-> %name% is the name of the factory (singular)  
-
 ### Seeder
+
+[Example](./Examples/Seeds.md)
 
 ```shell
 php artisan make:seeder %name%
@@ -179,11 +178,23 @@ php artisan make:seeder %name%
 
 > %name% is the name of the seeder (singular)  
 
+### Factory
+
+[Example](./Examples/Factory.md)
+
+```shell
+php artisan make:factory %name%
+```
+
+> %name% is the name of the factory (singular)  
+
 ---
 
 ## Routes
 
 ### Create Route
+
+- On `./routes/web.php`  
 
 ```php
 Route::get('/subDom', 'controller@method');
@@ -200,17 +211,17 @@ Route::get('/subDom', 'controller@method');
 - Make a file in the folder `./resources/views` named `%name%.blade.php`
 - View example:
 
-```php
-//this view extends `./resources/views/master/main.blade.php`
-@extends('master.main')
-//Fills `@yield('content')` with the content of the section
-@section('content')
-  @component('components.table', [
-    'players' => $players,
-  ])
-  @endcomponent
-@endsection
-```
+  ```php
+  //this view extends `./resources/views/master/main.blade.php`
+  @extends('master.main')
+  //Fills `@yield('content')` with the content of the section
+  @section('content')
+    @component('components.table', [
+      'players' => $players,
+    ])
+    @endcomponent
+  @endsection
+  ```
 
 ### Use Data in View
 

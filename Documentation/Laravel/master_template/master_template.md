@@ -1,5 +1,6 @@
-[Back](../Laravel.md)
 # Master template
+
+[Back](../Laravel.md)
 
 - main.blade.php
 
