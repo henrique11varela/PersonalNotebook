@@ -4,6 +4,11 @@
 
 ## Microsoft SQL Server Management Studio
 
+To install:
+
+- [SQL Server](https://go.microsoft.com/fwlink/p/?linkid=2215158&clcid=0x409&culture=en-us&country=us)
+- [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16#download-ssms)
+
 Command to execute previous commands `GO`
 
 Create Database:
