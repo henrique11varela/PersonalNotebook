@@ -9,7 +9,7 @@
   - [Install Laravel](#install-laravel)
     - [Get laravel installer](#get-laravel-installer)
   - [Create Laravel Project](#create-laravel-project)
-    - [Criar Projeto limpo](#criar-projeto-limpo)
+    - [New Project](#new-project)
   - [Setup Laravel Project](#setup-laravel-project)
     - [Add Frontend Resources: documentation](#add-frontend-resources-documentation)
     - [Install composer/npm dependencies](#install-composernpm-dependencies)
@@ -48,7 +48,7 @@ composer global require laravel/installer
 
 ## Create Laravel Project
 
-### Criar Projeto limpo
+### New Project
 
 ```shell
 composer create-project --prefer-dist laravel/laravel:^7.0 %nome_do_projeto%
@@ -151,11 +151,16 @@ php artisan make:controller %name%
 
 ### Model
 
+[Example](./Examples/Model.md)
+
 ```shell
 php artisan make:model %name%
 ```
 
 > %name% is the name of the model (singular)  
+
+Is made in the model file `app/%model%.php`  
+The relations are made here.  
 
 ### Migration
 
@@ -168,6 +173,8 @@ php artisan make:migration %creator% --create=%table%
 > %creator% is the name of the migration (plural) *create_table_plural*  
 > %table% is the name of the table (plural)
 
+Is made in the migration file `database/migrations/%date%_%creator%.php`
+
 ### Seeder
 
 [Example](./Examples/Seeds.md)
@@ -178,6 +185,13 @@ php artisan make:seeder %name%
 
 > %name% is the name of the seeder (singular)  
 
+Is made in the seeder file `database/seeds/Seeder.php`  
+Has to be called in the `database/seeds/DatabaseSeeder.php` file  
+
+```php
+$this->call(PersonSeeder::class);
+```
+
 ### Factory
 
 [Example](./Examples/Factory.md)
@@ -187,6 +201,8 @@ php artisan make:factory %name%
 ```
 
 > %name% is the name of the factory (singular)  
+
+Is made in the factory file `database/factories/Factory.php`
 
 ---
 
@@ -216,8 +232,9 @@ Route::get('/subDom', 'controller@method');
   @extends('master.main')
   //Fills `@yield('content')` with the content of the section
   @section('content')
+    //Component example
     @component('components.table', [
-      'players' => $players,
+      'key' => $value,
     ])
     @endcomponent
   @endsection
@@ -227,10 +244,10 @@ Route::get('/subDom', 'controller@method');
 
 ```php
 <!-- Inserts a string in the h1 tag -->
-<h1>{{ $players }}</h1>
+<h1>{{ $variable }}</h1>
 
 <!-- Inserts HTML in the h1 tag -->
-<h1>{!! $players !!}</h1>
+<h1>{!! $variable !!}</h1>
 ```
 
 ---
@@ -242,9 +259,9 @@ Route::get('/subDom', 'controller@method');
 ```php
 public function index()
 {
-  $players = player::all();
-  return response(view('players', [
-    'players' => $players,
+  $variable = Model::all();
+  return response(view('viewName', [
+    'key' => $variable,
   ]));
 }
 ```
@@ -262,17 +279,25 @@ Project
 ╠═ /app
 ║   ╚═ /Http
 ║       ╚═ /Controllers
+║           ╚═ Controllers.php
 ║
 ╠═ /database
 ║   ╠═ /factories
+║   ║   ╚═ Factory.php
 ║   ╠═ /migrations
+║   ║   ╚═ table.php
 ║   ╚═ /seeds
+║       ╠═ DatabaseSeeder.php
+║       ╚═ Seeder.php
 ║
 ╠═ /resources
 ║   ╚═ /views
-║       ╚═ /components
+║       ╠═ /components
+║       ║  ╚═ component.blade.php
+║       ╚═ view.blade.php
 ║
 ╠═ /routes
+║   ╚═ web.php
 ║
 ╚═ .env
 ```
