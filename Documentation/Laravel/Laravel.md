@@ -40,6 +40,12 @@
 
 ## Install Laravel
 
+XAMPP (Version 7.4.33 php)
+
+Composer (Version 2.5.5)
+
+Node (v16.19.1)
+
 ### Get laravel installer
 
 ```shell
