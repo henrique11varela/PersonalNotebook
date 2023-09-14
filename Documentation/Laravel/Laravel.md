@@ -34,8 +34,13 @@
   - [Views](#views)
     - [Create View: master template](#create-view-master-template)
     - [Use Data in View](#use-data-in-view)
+    - [table example](#table-example)
   - [Controllers](#controllers)
     - [Pass Data to View](#pass-data-to-view)
+    - [Model fillable](#model-fillable)
+    - [CRUD Controller](#crud-controller)
+    - [Form](#form)
+    - [select](#select)
   - [Folder Structure](#folder-structure)
 
 ## Install Laravel
@@ -219,7 +224,15 @@ Is made in the factory file `database/factories/Factory.php`
 - On `./routes/web.php`  
 
 ```php
-Route::get('/subDom', 'controller@method');
+Route::prefix('Prefix')->group(function () {
+    Route::get('', 'Controller@index')->name('Prefix.index');
+    Route::get('create', 'Controller@create')->name('Prefix.create');
+    Route::post('', 'Controller@store')->name('Prefix.store');
+    Route::get('{id}', 'Controller@show')->name('Prefix.show');
+    Route::get('{id}/edit', 'Controller@edit')->name('Prefix.edit');
+    Route::put('{id}', 'Controller@update')->name('Prefix.update');
+    Route::delete('{id}', 'Controller@destroy')->name('Prefix.destroy');
+});
 ```
 
 > Create a route to call the method in the controller when the url is /subDom
@@ -234,11 +247,8 @@ Route::get('/subDom', 'controller@method');
 - View example:
 
   ```php
-  //this view extends `./resources/views/master/main.blade.php`
   @extends('master.main')
-  //Fills `@yield('content')` with the content of the section
   @section('content')
-    //Component example
     @component('components.table', [
       'key' => $value,
     ])
@@ -254,6 +264,37 @@ Route::get('/subDom', 'controller@method');
 
 <!-- Inserts HTML in the h1 tag -->
 <h1>{!! $variable !!}</h1>
+```
+
+### table example
+
+```php
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach ($projects as $project)
+      <tr>
+        <th scope="row">{{ $project->id }}</th>
+        <td>{{ $project->name }}</td>
+        <td class="d-flex">
+          <a class="btn btn-primary mr-2" href="{{ route('project.show', $project->id) }}">Show</a>
+          <a class="btn btn-success mr-2" href="{{ route('project.edit', $project->id) }}">Edit</a>
+          <form method="post" action="{{route('project.destroy', $project->id)}}">
+            @csrf
+            @method('DELETE')
+            <button class="btn btn-danger" type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+    @endforeach
+  </tbody>
+</table>
 ```
 
 ---
@@ -274,6 +315,139 @@ public function index()
 
 > Pass the data `$players` to the view `players`
 > $players is an array of players (model)
+
+### Model fillable
+
+```shell
+protected $fillable = [
+    'name',
+];
+```
+
+### CRUD Controller
+
+```shell
+public function index()
+{
+  $projects = Model::all();
+  return view('pages.Project.index', [
+    'projects' => $projects,
+  ]);
+}
+
+public function create()
+{
+  return view('PATH_TO_VIEW');
+}
+
+public function store(Request $request)
+{
+  $this->validate($request, [
+    'name' => 'required',
+  ]);
+
+  $newProject = new Project();
+  $newProject->name = $request->name;
+  $newProject->save();
+
+  return redirect(route('project.index'));
+}
+
+public function show(int $id)
+{
+  $project = Project::find($id);
+    return view('pages.Project.show', [
+    'project' => $project,
+  ]);
+}
+
+public function edit(int $id)
+{
+  $project = Project::find($id);
+  return view('pages.Project.edit', [
+    'project' => $project,
+  ]);
+}
+
+public function update(Request $request, int $id)
+{
+  $this->validate($request, [
+    'name' => 'required',
+  ]);
+
+  $project = Project::find($id);
+
+  $project->name = $request->name;
+  $project->save();
+
+  return redirect(route('project.index'));
+}
+
+public function destroy(int $id)
+{
+  $project = Project::find($id);
+  $project->delete();
+
+  return redirect(route('project.index'));
+}
+```
+
+### Form
+
+```php
+{{-- $project --}}
+{{-- $mode s_Show e_Edit c_Create --}}
+<form method="post" action="{{ $mode == 'c' ? route('project.store') : ($mode == 'e' ? route('project.update', $project->id) : '') }}">
+  @csrf
+  @method($mode == 'c' ? 'POST' : 'PUT')
+
+  {{-- Input --}}
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+    </div>
+    <input type="text" id="name" name="name" class="form-control @error('name') is-invalid @enderror"
+      value="{{ isset($project) ? $project->name : old('name') }}" required aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default" @if($mode == 's') disabled @endif>
+    @error('name')
+      <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+      </span>
+    @enderror
+  </div>
+
+  {{-- Submit --}}
+  @if($mode != 's')
+    <button type="submit" class="btn btn-primary">Submit</button>
+  @endif
+</form>
+
+```
+
+### select
+
+```php
+<label for="project_id">Project:</label>
+<select
+  id="project_id"
+  name="project_id"
+  class="form-control @error('project_id') is-invalid @enderror"
+  required>
+  <option value="" disabled selected>Select a category</option>
+
+  @foreach($projects as $project)
+    <option value="{{ $project->id }}">
+      {{ $project->id }} - {{ $project->name }}
+    </option>
+  @endforeach
+</select>
+
+@error('project_id')
+  <span class="invalid-feedback" role="alert">
+    <strong>{{ $message }}</strong>
+  </span>
+@enderror
+```
 
 ---
 
