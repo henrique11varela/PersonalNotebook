@@ -267,7 +267,7 @@ Route::prefix('Prefix')->group(function () {
 ```
 
 ### table example
-
+[Example](./Examples/List.md)
 ```php
 <table class="table">
   <thead class="thead-dark">
